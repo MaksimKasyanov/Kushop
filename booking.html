@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Kushop</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<nav class="pages-nav">
+		<ul class="pages-nav__list">
+			<li class="pages-nav__item">
+				<button class="pages-nav__btn">Pages</button>
+			</li>
+			<li class="pages-nav__item">
+				<a class="pages-nav__link-catalog" href="index.html">Main</a>
+			</li>
+			<li class="pages-nav__item">
+				<a class="pages-nav__link-catalog" href="catalog.html">Catalog</a>
+			</li>
+			<li class="pages-nav__item">
+				<a class="pages-nav__link-catalog" href="commodity.html">Commodity</a>
+			</li>
+			<li class="pages-nav__item">
+				<a class="pages-nav__link-catalog" href="bag.html">Bag</a>
+			</li>
+			<li class="pages-nav__item">
+				<a class="pages-nav__link-catalog" href="blog.html">Blog</a>
+			</li>
+			<li class="pages-nav__item">
+				<a class="pages-nav__link-catalog" href="inform.html">Inform</a>
+			</li>
+			<li class="pages-nav__item">
+				<a class="pages-nav__link-catalog" href="popups.html">Popups</a>
+			</li>
+			<li class="pages-nav__item">
+				<a class="pages-nav__link-catalog" href="order.html">Order</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="container header-booking__wrapper">
+		<div class="header-booking">
+			<img class="header-booking__logo" src="images/logo.svg" alt="Logotype">
+			<div class="menu-desc__item menu-desc__item-questions">
+				<div class="menu-mobile__questions-wrapper">
+					<ul class="menu-mobile__questions-list">
+						<li class="menu-mobile__questions-item">
+							<button class="menu-mobile__questions-btn menu-mobile__questions-btn-ask">Ask a
+								question</button>
+						</li>
+						<li class="menu-mobile__questions-item menu-mobile__questions-item--call">
+							<a class="menu-mobile__questions-btn menu-mobile__questions-btn-call" href="tel:+380936725443">+380
+								93 672 54 43</a>
+						</li>
+						<li class="menu-mobile__questions-item menu-mobile__questions-item--call">
+							<a class="menu-mobile__questions-btn menu-mobile__questions-btn-call" href="tel:+380963612449">+380
+								96 361 24 49</a>
+						</li>
+						<li class="menu-mobile__questions-item menu-mobile__questions-item--call">
+							<a class="menu-mobile__questions-btn menu-mobile__questions-btn-call" href="tel:+380972570947">+380
+								97 257 09 47</a>
+						</li>
+						<li class="menu-mobile__questions-item menu-mobile__social-item">
+							<a class="menu-mobile__social-link" href="#">
+								<img class="menu-mobile__social-img" src="images/facebook.svg" alt="Facebook link">
+							</a>
+							<a class="menu-mobile__social-link" href="#">
+								<img class="menu-mobile__social-img" src="images/twitter.svg" alt="Twitter link">
+							</a>
+							<a class="menu-mobile__social-link" href="#">
+								<img class="menu-mobile__social-img" src="images/instagram.svg" alt="Instagram link">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<main class="booking container">
+		<div class="booking__form-wrapper">
+			<a class="booking__back-link" href="#"><img class="booking__back-link--img" src="images/arrow-left.svg"
+					alt="Lorem ipsum"></a>
+			<div class="booking__title-wrapper">
+				<h2 class="booking__title">Are you registered?</h2>
+				<button class="black-btn booking__black-btn">Entrance</button>
+			</div>
+			<form class="booking__data-wrapper">
+
+				<p class="booking__subtitle">Contact Information</p>
+				<input class="booking__form-data" type="email" placeholder="Email here">
+				<label class="filter__item booking__check-keep">
+					<input class="filter__item-checkbox" type="checkbox" checked>
+					<p class="filter__item-text">Keep me update news and offers</span>
+					</p>
+				</label>
+				<input class="booking__form-data" type="text" placeholder="Add note">
+
+				<p class="booking__subtitle booking__subtitle-delivery">Delivery Method</p>
+				<div class="booking__delivery-wrapper1">
+					<div class="booking__delivery-inner">
+						<input checked class="booking__radio-input" type="radio" id="delivery" name="delivery" value="phone">
+						<label class="booking__radio-item booking__radio-delivery" for="delivery">Delivery</label>
+					</div>
+				</div>
+				<div class="booking__delivery-wrapper2">
+					<div class="booking__delivery-inner">
+						<input class="booking__radio-input" type="radio" id="pickup" name="delivery" value="phone">
+						<label class="booking__radio-item booking__radio-pickup" for="pickup">Pick up</label>
+					</div>
+				</div>
+
+				<p class="booking__subtitle">Shipping Address</p>
+				<input class="booking__form-data" type="text" placeholder="First name">
+				<input class="booking__form-data" type="text" placeholder="Last name">
+				<input class="booking__form-data" type="text" placeholder="City">
+				<input class="booking__form-data" type="text" placeholder="Address">
+				<input class="booking__form-data" type="number" placeholder="Zip code">
+				<input class="booking__form-data booking__form-phone" type="number" placeholder="Phone">
+				<label class="filter__item">
+					<input class="filter__item-checkbox" type="checkbox" checked>
+					<p class="filter__item-text">Use shipping address as billing address</span>
+					</p>
+				</label>
+
+				<p class="booking__subtitle booking__subtitle-payments">Payments</p>
+				<div class="booking__delivery-wrapper1">
+					<div class="booking__delivery-inner">
+						<input class="booking__radio-input" type="radio" id="card" name="card" value="phone">
+						<label class="booking__radio-item booking__radio-delivery" for="card">Delivery</label>
+					</div>
+				</div>
+				<div class="booking__delivery-wrapper1">
+					<div class="booking__delivery-inner">
+						<input class="booking__radio-input" type="radio" id="paypal" name="card" value="phone">
+						<label class="booking__radio-item booking__radio-pickup" for="paypal">Pick up</label>
+					</div>
+				</div>
+				<label class="filter__item">
+					<input class="filter__item-checkbox" type="checkbox" checked>
+					<p class="filter__item-text">Save information for next time</span>
+					</p>
+				</label>
+				<button class="black-btn booking__submit">Checkout</button>
+				<button class="booking__reset">Return to bag</button>
+			</form>
+		</div>
+		<div class="summary__wrapper">
+			<div class="summary">
+				<h4 class="summary__title">Order Summary</h4>
+				<div class="summary__item">
+					<img class="summary__item-img" src="images/popular/1.jpg" alt="Lorem ipsum">
+					<div class="summary__item-info">
+						<p class="summary__item-title">Buba Kush</p>
+						<p class="summary__item-mark">(85)</p>
+						<p class="summary__item-num">3 seed pack Price</p>
+						<p class="summary__item-cost">$12.24</p>
+						<div class="summary__item-sum">
+							<span class="summary__item-cost"></span>
+							<div class="drop-down__qty-wrapper summary__drop-down">
+								<ul class="drop-down drop-down__qty drop-down__qty1 products__qty-dropdown">
+									<li class="drop-down__item">
+										<button class="drop-down__btn drop-down__btn1 products__btn-qty products__btn-qty01">Qty:
+											1</button>
+									</li>
+									<li class="drop-down__item">
+										<button class=" drop-down__btn products__btn-qty1">1</button>
+									</li>
+									<li class="drop-down__item">
+										<button class=" drop-down__btn products__btn-qty2">2</button>
+									</li>
+									<li class="drop-down__item">
+										<button class=" drop-down__btn products__btn-qty3">3</button>
+									</li>
+									<li class="drop-down__item">
+										<button class=" drop-down__btn products__btn-qty4">4</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<input class="summary__promo" type="number" placeholder="Promo code here">
+				<div class="summary__info">
+					<div class="summary__info-items">
+						<p class="summary__info-items--inner">
+							<span class="total__info-digit">2</span> item<span class="total__info-plural">s</span>
+						</p>
+						<span class="summary__info-cost">$ 12.24</span>
+					</div>
+					<div class="summary__info-items">
+						<span class="total__info-digit">Shipping</span>
+						<span class="summary__info-cost">Free Shipping</span>
+					</div>
+					<div class="summary__info-items">
+						<p class="summary__info-digit summary__info-digit--black">TOTAL</p>
+						<span class="summary__info-cost summary__info-cost--bold">$ 12.24</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script src="js/main.js" async=""></script>
+</body>
+
+</html>
